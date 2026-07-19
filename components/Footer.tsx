@@ -156,11 +156,11 @@ export default function Footer() {
 
               {/* Email */}
               <a
-                href="mailto:visionxdigital29@gmail.com"
+                href="mailto:business@mywebcraft.in"
                 className="flex items-start gap-3 text-sm text-slate-400 transition hover:text-blue-400"
               >
                 <Mail size={18} className="mt-0.5 shrink-0" />
-                <span>visionxdigital29@gmail.com</span>
+                <span>business@mywebcraft.in</span>
               </a>
 
               {/* Location */}

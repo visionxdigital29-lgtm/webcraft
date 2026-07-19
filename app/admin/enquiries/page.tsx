@@ -57,7 +57,7 @@ export default function AdminEnquiriesPage() {
         return;
       }
 
-      if (user.email !== "visionxdigital29@gmail.com") {
+      if (user.email !== "business@mywebcraft.in") {
         await supabase.auth.signOut();
         router.replace("/admin/login");
         return;

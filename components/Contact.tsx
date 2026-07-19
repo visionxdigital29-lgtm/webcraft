@@ -25,9 +25,9 @@ const contactDetails = [
   {
     icon: Mail,
     title: "Email Us",
-    value: "visionxdigital29@gmail.com",
+    value: "business@mywebcraft.in",
     description: "Reply within 24 hours",
-    href: "mailto:visionxdigital29@gmail.com",
+    href: "mailto:business@mywebcraft.in",
   },
   {
     icon: MessageCircle,

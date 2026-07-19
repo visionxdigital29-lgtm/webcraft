@@ -35,7 +35,7 @@ export default function AdminLoginPage() {
         return;
       }
 
-      if (data.user.email !== "visionxdigital29@gmail.com") {
+      if (data.user.email !== "business@mywebcraft.in") {
         await supabase.auth.signOut();
 
         setErrorMessage("You are not authorized to access the admin panel.");
