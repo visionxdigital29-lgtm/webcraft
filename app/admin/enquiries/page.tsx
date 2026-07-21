@@ -107,10 +107,13 @@ export default function AdminEnquiriesPage() {
       )
     );
 
-    const { error } = await supabase
-      .from("contact_enquiries")
-      .update({ status: newStatus })
-      .eq("id", enquiryId);
+const { data, error } = await supabase
+  .from("contact_enquiries")
+  .update({ status: newStatus })
+  .eq("id", enquiryId)
+  .select();
+
+console.log("Status update result:", data);
 
     if (error) {
       console.error("Status update error:", error);
