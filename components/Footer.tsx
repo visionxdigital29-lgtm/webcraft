@@ -94,7 +94,7 @@ export default function Footer() {
 
               {/* WhatsApp */}
               <a
-                href="https://wa.me/916386421939"
+                href="https://wa.me/917572002836"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="WhatsApp"
@@ -145,14 +145,6 @@ export default function Footer() {
             <h3 className="text-lg font-black">Contact WebCraft</h3>
 
             <div className="mt-6 space-y-4">
-              {/* Phone */}
-              <a
-                href="tel:+916386421939"
-                className="flex items-start gap-3 text-sm text-slate-400 transition hover:text-blue-400"
-              >
-                <Phone size={18} className="mt-0.5 shrink-0" />
-                <span>+91 63864 21939</span>
-              </a>
 
               {/* Email */}
               <a

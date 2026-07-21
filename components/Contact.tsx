@@ -16,13 +16,6 @@ import { supabase } from "@/lib/supabase";
 
 const contactDetails = [
   {
-    icon: Phone,
-    title: "Call Us",
-    value: "+91 63864 21939",
-    description: "Monday to Saturday",
-    href: "tel:+916386421939",
-  },
-  {
     icon: Mail,
     title: "Email Us",
     value: "business@mywebcraft.in",
@@ -34,7 +27,7 @@ const contactDetails = [
     title: "WhatsApp",
     value: "Chat with WebCraft",
     description: "Quick project discussion",
-    href: "https://wa.me/916386421939",
+    href: "https://wa.me/917572002836",
   },
   {
     icon: MapPin,
@@ -101,7 +94,7 @@ export default function Contact() {
 ${enquiry.project_details}
       `.trim();
 
-      const whatsappUrl = `https://wa.me/916386421939?text=${encodeURIComponent(
+      const whatsappUrl = `https://wa.me/917572002836?text=${encodeURIComponent(
         whatsappMessage
       )}`;
 
@@ -378,7 +371,7 @@ ${enquiry.project_details}
                     className="w-full rounded-xl border border-white/10 bg-[#07101e] px-4 py-4 text-sm text-white outline-none transition focus:border-blue-500/60 focus:ring-4 focus:ring-blue-500/10"
                   >
                     <option>WhatsApp</option>
-                    <option>Phone Call</option>
+                    <option value="WhatsApp Call">WhatsApp Call</option>
                     <option>Email</option>
                   </select>
                 </label>
