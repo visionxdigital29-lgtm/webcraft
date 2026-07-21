@@ -62,7 +62,6 @@ export default function AdminEnquiriesPage() {
         router.replace("/admin/login");
         return;
       }
-
       const { data, error } = await supabase
         .from("contact_enquiries")
         .select("*")
@@ -106,7 +105,7 @@ export default function AdminEnquiriesPage() {
           : item
       )
     );
-
+console.log("Updating enquiry ID:", enquiryId, "New status:", newStatus);
 const { data, error } = await supabase
   .from("contact_enquiries")
   .update({ status: newStatus })
