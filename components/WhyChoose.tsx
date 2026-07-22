@@ -98,14 +98,12 @@ export default function WhyChoose() {
               <Target size={16} />
               Why Choose WebCraft
             </div>
-
             <h2 className="mt-7 text-4xl font-black leading-tight tracking-tight sm:text-5xl">
-              We Don&apos;t Just Build Websites. We Build{" "}
-              <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-                Digital Success.
-              </span>
-            </h2>
-
+  Why Choose WebCraft for Website Development in Patna?{" "}
+  <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+    Grow Your Business Online.
+  </span>
+</h2>
             <p className="mt-6 max-w-xl text-base leading-8 text-slate-400">
               Every website is designed around your business goals. Our focus
               is to create a premium online presence that builds trust,

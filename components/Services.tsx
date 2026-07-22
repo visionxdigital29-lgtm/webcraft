@@ -73,15 +73,16 @@ export default function Services() {
           </p>
 
           <h2 className="mt-3 text-3xl font-black leading-tight tracking-tight text-white sm:mt-5 sm:text-5xl">
-            Everything You Need to{" "}
+            Website Development Services in Patna to{" "}
             <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-              Grow Online
+              Grow Your Business Online
             </span>
           </h2>
 
           <p className="mx-auto mt-4 max-w-2xl text-sm leading-6 text-slate-400 sm:mt-6 sm:text-base sm:leading-8">
-            We provide complete website solutions for businesses, shops,
-            startups and personal brands.
+            We provide professional website development in Patna for businesses,
+            shops, startups and brands, including business websites, e-commerce
+            websites, landing pages and custom web solutions.
           </p>
         </motion.div>
 
@@ -135,4 +136,4 @@ export default function Services() {
       </div>
     </section>
   );
-}
+} 

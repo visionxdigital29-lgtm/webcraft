@@ -89,15 +89,16 @@ export default function Home() {
             </div>
 
             <h1 className="max-w-3xl text-5xl font-black leading-[1.05] tracking-tight sm:text-6xl xl:text-7xl">
-              We Build Modern Websites That{" "}
+              Website Developer in Patna That{" "}
               <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-cyan-400 bg-clip-text text-transparent">
-                Grow Your Business
+                Grows Your Business
               </span>
             </h1>
 
             <p className="mt-7 max-w-xl text-base leading-8 text-slate-400 sm:text-lg">
-              We design fast, secure and high-converting websites that help
-              businesses attract customers, build trust and grow online.
+              WebCraft provides professional website development in Patna for
+              businesses, startups and brands, including business websites,
+              e-commerce websites and custom web development.
             </p>
 
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">

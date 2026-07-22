@@ -5,28 +5,26 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.mywebcraft.in"),
 
   title: {
-    default: "WebCraft | Website Developer & Website Development Company",
+    default: "WebCraft | Website Developer & Web Development Company in Patna",
     template: "%s | WebCraft",
   },
 
   description:
-    "WebCraft is a professional website development company creating modern, fast, secure and responsive business websites, e-commerce websites and custom websites in India.",
+    "WebCraft is a professional website development company in Patna offering business websites, e-commerce websites, custom web development and responsive website design services across India.",
 
   keywords: [
-    "website developer",
-    "website development company",
-    "website designer",
-    "web developer",
-    "website developer in India",
-    "website design company",
-    "business website developer",
-    "ecommerce website developer",
+    "website developer in Patna",
+    "website development company in Patna",
+    "web developer in Patna",
+    "website designer in Patna",
+    "web design company in Patna",
+    "website development company in Bihar",
+    "business website development",
+    "ecommerce website development",
     "custom website development",
-    "professional website development",
-    "affordable website developer",
-    "website banwane wala",
-    "website banwana hai",
-    "website designing services",
+    "professional website developer",
+    "responsive website design",
+    "website development company in India",
     "WebCraft",
   ],
 
@@ -45,9 +43,9 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "WebCraft | Professional Website Development Company",
+    title: "WebCraft | Website Development Company in Patna",
     description:
-      "Modern, fast, secure and responsive websites for businesses, startups and brands. Get your professional website built by WebCraft.",
+      "Professional website development in Patna for businesses, startups and brands. Business websites, e-commerce websites and custom web solutions.",
     url: "https://www.mywebcraft.in/",
     siteName: "WebCraft",
     locale: "en_IN",
@@ -56,9 +54,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "WebCraft | Professional Website Development Company",
+    title: "WebCraft | Website Development Company in Patna",
     description:
-      "Professional business, e-commerce and custom website development services by WebCraft.",
+      "Professional business, e-commerce and custom website development services by WebCraft in Patna, Bihar.",
   },
 
   robots: {
@@ -76,9 +74,55 @@ export const metadata: Metadata = {
   category: "Website Development",
 
   other: {
-    "geo.region": "IN",
-    "geo.placename": "India",
+    "geo.region": "IN-BR",
+    "geo.placename": "Patna, Bihar",
   },
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://www.mywebcraft.in/#organization",
+
+  name: "WebCraft",
+  url: "https://www.mywebcraft.in/",
+
+  description:
+    "WebCraft is a professional website development company in Patna, Bihar providing business websites, e-commerce websites, landing pages, custom web development and website maintenance services.",
+
+  telephone: "+917572002836",
+  email: "business@mywebcraft.in",
+
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Patna",
+    addressRegion: "Bihar",
+    addressCountry: "IN",
+  },
+
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+917572002836",
+    email: "business@mywebcraft.in",
+    contactType: "customer service",
+    areaServed: "IN",
+    availableLanguage: ["English", "Hindi"],
+  },
+
+  areaServed: {
+    "@type": "Country",
+    name: "India",
+  },
+
+  knowsAbout: [
+    "Website Development",
+    "Website Design",
+    "E-Commerce Website Development",
+    "Business Website Development",
+    "Landing Page Design",
+    "Web Application Development",
+    "Website Maintenance",
+  ],
 };
 
 export default function RootLayout({
@@ -89,6 +133,16 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full">
       <body className="min-h-full flex flex-col antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema).replace(
+              /</g,
+              "\\u003c"
+            ),
+          }}
+        />
+
         {children}
       </body>
     </html>
